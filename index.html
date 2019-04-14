@@ -2,73 +2,75 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Web panel ISMems</title>
 </head>
 <body>
 	<div class="container">
-		<div class="col-lg-6">
-			<form>
-				<div class="form-group">
-					<label for="inpName">Название</label>
-					<input type="text" id="inputName" class="form-control" placeholder="Название" required autofocus>
-				</div>
-				<div class="form-group">
-				    <label for="inputType">Тип</label>
-				    <select class="form-control">
-						<option>Default select</option>
-						<option>Default select2</option>
-					</select>
-				</div>
+		<div class="row">
+			<div class="col-lg-6 m-auto">
+				<form>
+					<div class="form-group">
+						<label for="inpName">Название</label>
+						<input type="text" id="inputName" class="form-control" placeholder="Название" required autofocus>
+					</div>
+					<div class="form-group">
+					    <label for="inputType">Тип</label>
+					    <select class="form-control">
+							<option>Default select</option>
+							<option>Default select2</option>
+						</select>
+					</div>
 
-				<div class="form-group">
-					<label for="inpImage">Изображение</label>
-					<input type="text" id="inputImage" class="form-control" placeholder="Изображение">
-				</div>
+					<div class="form-group">
+						<label for="inpImage">Изображение</label>
+						<input type="text" id="inputImage" class="form-control" placeholder="Изображение">
+					</div>
 
-				<div class="form-group">
-					<label for="exampleFormControlSelect1">Example select</label>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						
+						<input type="text" id="inputTag" class="form-control dropdown-toggle" data-toggle="dropdown" placeholder="Название тэга">
+
+						<ul class="dropdown-menu tags" id="ListOfTags">
+							<li class="tag_item" id="01">01</li>
+							<li class="tag_item" id="02">02</li>
+							<li class="tag_item" id="03">03</li>
+							<li class="tag_item" id="04">04</li>
+							<li class="tag_item" id="05">05</li>
+							<li class="tag_item" id="06">06</li>
+							<li class="tag_item" id="07">07</li>
+							<li class="tag_item" id="08">08</li>
+							<li class="tag_item" id="09">09</li>
+							<li class="tag_item" id="10">10</li>
+						</ul>
+					</div>
 					
-					<input type="text" id="inputTag" class="form-control" placeholder="Название тэга">
-					<ul id="ListOfTags">
-						<li class="tag_item" id="01">01</li>
-						<li class="tag_item" id="02">02</li>
-						<li class="tag_item" id="03">03</li>
-						<li class="tag_item" id="04">04</li>
-						<li class="tag_item" id="05">05</li>
-						<li class="tag_item" id="06">06</li>
-						<li class="tag_item" id="07">07</li>
-						<li class="tag_item" id="08">08</li>
-						<li class="tag_item" id="09">09</li>
-						<li class="tag_item" id="10">10</li>
-					</ul>
-				</div>
+					<div class="form-group">
+						<ul class="list-inline" id="ListOfChoosenTags">
+							<!--li.list-inline-item.choosen_tag_item#$${$$}>i.material-icons{clear}-->
+							<li class="list-inline-item choosen_tag_item" id="01">01<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="02">02<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="03">03<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="04">04<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="05">05<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="06">06<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="07">07<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="08">08<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="09">09<i class="material-icons clear-icon">clear</i></li>
+							<li class="list-inline-item choosen_tag_item" id="10">10<i class="material-icons clear-icon">clear</i></li>
+						</ul>
+					</div>
 
-				<div class="form-group">
-					<label for="exampleFormControlSelect1">Выбранные теги:</label>
-					<ul id="ListOfChoosenTags">
-						<li class="choosen_tag_item" id="01">01</li>
-						<li class="choosen_tag_item" id="02">02</li>
-						<li class="choosen_tag_item" id="03">03</li>
-						<li class="choosen_tag_item" id="04">04</li>
-						<li class="choosen_tag_item" id="05">05</li>
-						<li class="choosen_tag_item" id="06">06</li>
-						<li class="choosen_tag_item" id="07">07</li>
-						<li class="choosen_tag_item" id="08">08</li>
-						<li class="choosen_tag_item" id="09">09</li>
-						<li class="choosen_tag_item" id="10">10</li>
-					</ul>
-				</div>
-
-			  <div class="form-group form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
-			</form>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
