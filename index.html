@@ -21,11 +21,20 @@
 						<label for="inpName">Название</label>
 						<input type="text" id="inputName" class="form-control" placeholder="Название" required autofocus>
 					</div>
-					<div class="form-group">
+
+					<div class="form-group types-selector">
 					    <label for="inputType">Тип</label>
-					    <select class="form-control" id="inputTypes">
-								
-							</select>
+					    <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" id="inputType" placeholder="Название типа">
+							<ul class="dropdown-menu dropdown-items" id="ListOfTypes">
+							
+							</ul>
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Добавить новый тип" id="newTypeField">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="newType">Добавить</button>
+						</div>
 					</div>
 
 					<div class="form-group">
@@ -34,11 +43,11 @@
 					</div>
 
 					<div class="form-group tags-selector">
-						<label for="exampleFormControlSelect1">Example select</label>
+						<label for="exampleFormControlSelect1">Выбор тэгов</label>
 						
 						<input type="text" id="inputTag" class="form-control dropdown-toggle" data-toggle="dropdown" placeholder="Название тэга">
 
-						<ul class="dropdown-menu tags" id="ListOfTags">
+						<ul class="dropdown-menu dropdown-items" id="ListOfTags">
 							
 						</ul>
 					</div>
@@ -49,7 +58,15 @@
 						</ul>
 					</div>
 
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Добавить новый тэг" id="newTagField">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="newTag">Добавить</button>
+						</div>
+					</div>
+					
 				  <button type="submit" class="btn btn-primary">Submit</button>
+
 				</form>
 			</div>
 		</div>
